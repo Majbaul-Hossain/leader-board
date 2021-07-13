@@ -1,8 +1,10 @@
+/* Universal Css  */
+*{
+    margin: 0;padding: 0
+}
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.favicon{
-    color: blue;
-}
+
 /* Utilities */
 h3 {
     font-weight: 500;
@@ -23,6 +25,71 @@ main{
     padding: 35px 30px;
     border-radius: 5px;
     margin-top: 20px;
+}
+/* Navigation Bar  */
+#navigationBar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #562EFF;
+    padding: 15px 65px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo_image img{
+    Width: 40px;
+    Height: 50px;
+}
+.page_title{
+    color: white;
+    margin-left: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.menu_bar{
+    display: flex;
+    align-items: center;
+}
+.menu_list{
+    position: relative;
+}
+.menu_list ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+.menu_list ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding-right: 35px;
+}
+.menu_wraper ul {
+    display: block;
+    position: absolute;
+    background-color: whitesmoke;
+    top: 30px;
+    left:-25px;
+    transform: scaleY(0);
+    transform-origin:top ;
+    transition: .5s;
+
+}
+.menu_wraper ul li{
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.menu_wraper ul li:hover {
+    background-color:#562EFF;
+    color: white;
+}
+.menu_wraper :hover ul{
+    transform: scaleY(1);
+}
+.profile img{
+    width: 50px;
+    height: 50px;
 }
 /* Top Players  */
 .sectionTitle{
@@ -70,7 +137,7 @@ main{
 ------------------
  Top blogs styles 
 ------------------
- */
+*/
  .blog_wrapper{
      display: grid;
      grid-template-columns: repeat(2,1fr);
@@ -187,6 +254,10 @@ main{
     .line{
         width: 100%;
     }
+    #navigationBar{
+        width: 75%;
+    }
+    
 }
 
 /* Tablets And Ipads */
@@ -219,5 +290,8 @@ main{
     }
     .line{
         width: 100%;
+    }
+    #navigationBar{
+        width: 685px;
     }
 }
