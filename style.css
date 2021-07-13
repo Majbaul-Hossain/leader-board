@@ -181,7 +181,9 @@ main{
         flex-direction: column;
         align-items: center;
     }
-    
+    .line{
+        width: 100%;
+    }
 }
 
 /* Tablets And Ipads */
@@ -191,6 +193,7 @@ main{
     }
     #container{
         width: 100%;
+        padding-left: 50px;
     }
     .topPlayers,.blog_wrapper,.courses{
         grid-template-columns: repeat(2, 1fr);
@@ -210,5 +213,8 @@ main{
     }
     .courses{
         grid-row-gap:20px;
+    }
+    .line{
+        width: 100%;
     }
 }
